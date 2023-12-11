@@ -1,9 +1,14 @@
 <?php
 /**
- * Plugin Name: WP Security Headers
- * Description: Mejora la seguridad de tu sitio de WordPress estableciendo encabezados HTTP de seguridad recomendados.
- * Version: 1.0
- * Author: Tu Nombre
+ *  Plugin Name: WP Security Headers
+ *  Plugin URI: http://josecaicedo.co
+ *  Description: Mejora la seguridad de tu sitio de WordPress estableciendo encabezados HTTP de seguridad recomendados.
+ *  Author: Jose Caicedo
+ *  Version: 1.0
+ *  Author URI: http://josecaicedo.co
+ *  Text Domain: cf7-ciuu-list
+ *  License: GPL v2 or later
+ *  License URI: https://www.gnu.org/licenses/gpl-2.0.html
  */
 
 // Salir si se accede directamente
