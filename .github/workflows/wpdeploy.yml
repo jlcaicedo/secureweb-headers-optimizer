@@ -25,14 +25,22 @@ jobs:
           draft: false
           prerelease: false
       
-      - name: WordPress Plugin Deploy
-        id: deploy
-        uses: 10up/action-wordpress-plugin-deploy@stable
+      - name: Create Zip Release
+        id: zip
+        uses: thedoctor0/zip-release@0.7.5
         with:
-          generate-zip: true
-        env:
-          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
-          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          type: 'zip'
+          filename: ${{ github.event.repository.name }}.zip
+          exclusions: '*.git* .wordpress-org .distignore README.md'
+      
+      #      - name: WordPress Plugin Deploy
+      #        id: deploy
+      #        uses: 10up/action-wordpress-plugin-deploy@stable
+      #        with:
+      #          generate-zip: true
+      #        env:
+      #          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+      #          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
       
       - name: Upload Release Asset
         id: upload
@@ -41,6 +49,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.release.outputs.upload_url }}
-          asset_path: ${{github.workspace}}/${{ github.event.repository.name }}.zip
+          asset_path: ${{ github.event.repository.name }}.zip
           asset_name: ${{ github.event.repository.name }}.zip
           asset_content_type: application/zip
