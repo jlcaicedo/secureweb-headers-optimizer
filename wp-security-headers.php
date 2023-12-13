@@ -2,8 +2,9 @@
 /**
  *  Plugin Name: WP Security Headers
  *  Plugin URI: http://josecaicedo.co
- *  Description: Improve the security of your WordPress site by setting recommended security HTTP headers. *  Author: Jose Caicedo
- *  Version: 1.0
+ *  Description: Improve the security of your WordPress site by setting recommended security HTTP headers.
+ *  Author: Jose Caicedo
+ *  Version: 1.0.1
  *  Author URI: http://josecaicedo.co
  *  Text Domain: cf7-ciuu-list
  *  License: GPL v2 or later
