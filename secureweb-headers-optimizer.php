@@ -1,15 +1,15 @@
 <?php
-/**
- *  Plugin Name: WP Security Headers
- *  Plugin URI: http://josecaicedo.co
- *  Description: Improve the security of your WordPress site by setting recommended security HTTP headers.
- *  Author: Jose Caicedo
- *  Version: 1.2.0
- *  Author URI: http://josecaicedo.co
- *  Text Domain: cf7-ciuu-list
- *  License: GPL v2 or later
- *  License URI: https://www.gnu.org/licenses/gpl-2.0.html
- */
+/*
+Plugin Name: SecureWeb Headers Optimizer
+Plugin URI: http://josecaicedo.co/plugins/secureweb-headers-optimizer
+Description: Improve the security of your WordPress site by setting recommended security HTTP headers and enable iframe and flash rendering in Webkit for post previews.
+Version: 1.2.1
+Author: Jose Luis Caicedo
+Author URI: https://josecaicedo.co
+License: GPL2
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: secureweb-headers-optimizer
+*/
 
 if (!defined('ABSPATH')) exit;
 
