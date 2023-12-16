@@ -3,7 +3,7 @@
 Plugin Name: SecureWeb Headers Optimizer
 Plugin URI: http://josecaicedo.co/plugins/secureweb-headers-optimizer
 Description: Improve the security of your WordPress site by setting recommended security HTTP headers and enable iframe and flash rendering in Webkit for post previews.
-Version: 1.2.1
+Version: 1.2.2
 Author: Jose Luis Caicedo
 Author URI: https://josecaicedo.co
 License: GPL2
